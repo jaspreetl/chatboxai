@@ -10,6 +10,7 @@ export default function Home() {
       content: `Hi, I'm the Headstarter Support Agent. How can I assist you today?`,
     },
   ])
+  
   const [message, setMessage] = useState('')
 
   const sendMessage = async () => {
