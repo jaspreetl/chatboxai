@@ -52,6 +52,8 @@ export default function Home() {
             },
           ];
         });
+
+        
       } else {
         throw new Error("Received empty text response from API.");
       }
