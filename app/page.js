@@ -10,14 +10,14 @@ export default function Home() {
       content: `Hi, I'm the Headstarter Support Agent. How can I assist you today?`,
     },
   ])
-  
   const [message, setMessage] = useState('')
 
   const sendMessage = async () => {
     if (message.trim() === '') return; // Prevent sending empty messages
-
+    
     const updatedMessages = [...messages, { role: 'user', content: message }];
-    setMessages([...updatedMessages, { role: 'assistant', content: '' }])
+    
+    etMessages([...updatedMessages, { role: 'assistant', content: '' }])
     setMessage('')
 
     try {
