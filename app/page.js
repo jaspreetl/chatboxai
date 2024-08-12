@@ -39,7 +39,7 @@ export default function Home() {
       if (data.error) {
         throw new Error(data.error);
       }
-
+      
       if (data.text) {
         setMessages((messages) => {
           let lastMessage = messages[messages.length - 1];
@@ -53,7 +53,7 @@ export default function Home() {
           ];
         });
 
-        
+
       } else {
         throw new Error("Received empty text response from API.");
       }
